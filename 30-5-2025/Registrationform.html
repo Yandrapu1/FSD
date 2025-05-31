@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+
+
+<div style="text-align:center">
+
+<a href ="HTMLtask2.html"><b>Home</b></a>
+<a href ="lap.html" target="_blank"><b>laptop</b></a>
+<a href ="Mobile.html"><b>Mobile</b></a>
+<a href ="Watch.html "><b>Watches</b></a>
+<a href="con1.html"><b>Contact</b></a>
+
+</div>
+
+<h1>Registration Form</h1>
+
+<form>
+  <table cellpadding="8">
+    <tr>
+      <td><label for="username">Username <font color="red">*</font></label></td>
+      <td><input type="text" placeholder="Enter Username" id="username" required pattern="[a-zA-Z]{5,15}" title="only alphabets and min 5 max 15"></td>
+    </tr>
+
+    <tr>
+      <td><label for="mobile">Mobile Number</label></td>
+      <td><input type="text" id="mobile" pattern="[0-9]{10}"></td>
+    </tr>
+
+    <tr>
+      <td><label for="email">Email</label></td>
+      <td><input type="email" id="email" required></td>
+    </tr>
+
+    <tr>
+      <td><label for="password">Password</label></td>
+      <td><input type="password" id="password"></td>
+    </tr>
+
+    <tr>
+      <td><label for="dob">DOB</label></td>
+      <td><input type="datetime-local" id="dob"></td>
+    </tr>
+
+    <tr>
+      <td><label for="resume">Upload Resume</label></td>
+      <td><input type="file" id="resume"></td>
+    </tr>
+
+    <tr>
+      <td><label>Gender</label></td>
+      <td>
+        <input type="radio" name="drf" id="male">Male
+        <input type="radio" name="drf" id="female">Female
+        <input type="radio" name="drf" id="prefer">Prefer not to say
+      </td>
+    </tr>
+
+    <tr>
+      <td><label>Languages Known</label></td>
+      <td>
+        <input type="checkbox" id="java">Java
+        <input type="checkbox" id="js">JavaScript
+        <input type="checkbox" id="cpp">C++
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="color">Fav Color</label></td>
+      <td><input type="color" id="color"></td>
+    </tr>
+
+    <tr>
+      <td><label for="course">Course</label></td>
+      <td>
+        <select id="course">
+          <option value="Full Stack">Full Stack</option>
+          <option value="Data Science">Data Science</option>
+          <option value="EV">EV</option>
+          <option value="solar">Solar</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="city">Select City</label></td>
+      <td>
+        <input list="city">
+        <datalist id="city">
+          <option value="Vizag">
+          <option value="Hyderabad">
+          <option value="Chennai">
+          <option value="Indore">
+          <option value="Mumbai">
+        </datalist>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="feedback">Feedback</label></td>
+      <td><textarea id="feedback" cols="30" rows="5"></textarea></td>
+    </tr>
+
+    <tr>
+      <td><label for="rating">Rate yourself (1 to 10)</label></td>
+      <td><input type="range" id="rating" min="1" max="10"></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="center">
+        <input type="submit" value="Register Now">
+        <input type="reset" value="Cancel">
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>
